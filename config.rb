@@ -68,11 +68,11 @@ end
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-helpers do
-  def some_helper
-    "Helping"
-  end
-end
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -91,6 +91,8 @@ set :relative_links, true
 activate :livereload
 
 activate :relative_assets
+
+require 'slim'
 
 # Build-specific configuration
 configure :build do

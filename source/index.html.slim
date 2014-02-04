@@ -1,0 +1,35 @@
+---
+title: Home
+---
+
+.row
+  .large-12.columns
+  	h1 = current_page.data.title
+
+.row
+	.large-12-columns
+		ul(data-orbit)
+			li
+				img src="#{lorem.image('800x250', :text => 'One', :background_color => '6c6', :color => 'fff')}"
+			li
+				img src="#{lorem.image('800x250', :text => 'Two', :background_color => 'c66', :color => 'fff')}"
+			li
+				img src="#{lorem.image('800x250', :text => 'Two', :background_color => '66c', :color => 'fff')}"
+
+.row
+  .large-12.columns
+		p 
+			| The Drexel Ultrasound and Optics Wound Healing Team was formed as a collaboration 
+			| between the ultrasound work of Dr. Peter Lewin and the optics team of Drs. Michael 
+			| Weingarten and Leonid Zubkov and the late Dr. Elisabeth Papazoglou.  The team is 
+			| dedicated to using well documented ultrasound expository and optical spectroscopy 
+			| systems to treat and assess chronic wounds.  The team has worked with low-frequency 
+			span.alert.secondary <100kHz
+			| , low-intensity 
+			span.alert.secondary <100mW/cm2
+			| ultrasound to treat venous ulcers and Diffuse Near 
+			| Infrared Spectroscopy and Diffuse Correlation Spectroscopy to quantify wound healing.
+			| These devices have been combined to offer a “theragnostic” approach, combining 
+			| therapy and diagnostic technologies.  Our team includes collaborators with the Drexel
+			| University College of Medicine and Chemical Engineering Departments as well as Thomas
+			| Jefferson and Temple Universities.
