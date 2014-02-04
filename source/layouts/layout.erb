@@ -6,13 +6,27 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "The Middleman" %></title>
     
-    <%= stylesheet_link_tag "app", "style" %>
+    <%= stylesheet_link_tag "app" %>
     <%= javascript_include_tag "modernizr" %>
   </head>
   
   <body class="<%= page_classes %>">
-    <%= yield %>
-
+    <div class="row">
+      <div class="large-12 columns">
+        <%= partial "header" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-3 columns">
+        <%= partial "navigation" %>
+      </div>
+      <div class="medium-9 columns">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="row">
+      <%= partial "footer" %>
+    </div>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>
