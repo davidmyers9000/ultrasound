@@ -2,20 +2,22 @@
 title: Home
 ---
 
-.row
-  .large-12.columns
-  	h1 = current_page.data.title
+/
+	.row
+	  .large-12.columns
+	  	h1 = current_page.data.title
 
 .row
 	.large-12-columns
 		ul(data-orbit)
 			li
-				img src="#{lorem.image('800x325', :text => 'One', :background_color => '6c6', :color => 'fff')}"
+				= image_tag 'slideshow12.jpg'
 			li
-				img src="#{lorem.image('800x325', :text => 'Two', :background_color => 'c66', :color => 'fff')}"
+				= image_tag 'slideshow8.jpg'
 			li
-				img src="#{lorem.image('800x325', :text => 'Three', :background_color => '66c', :color => 'fff')}"
-
+				= image_tag 'slideshow11.jpg'
+			li
+				= image_tag 'slideshow3.jpg'
 .row
   .large-12.columns
 		p 
