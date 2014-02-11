@@ -4,23 +4,21 @@ title: People
 
 .row
   .large-12.columns
-  	h1 = current_page.data.title
+		h1 = current_page.data.title
+		= image_tag "people.jpg", class: "image_panel right", width: "300"
 
-.row
-  .large-12.columns
-  	dl.accordion(data-accordion)
-  		dd
-			a href="#panel1" Dr. Peter A. Lewin
-			#panel1.content
-				p
-					| R.B. Beard Distinguished University Professor of Electrical and Biomedical Engineering & Director,  Biomedical Ultrasound Research and Education Center.
-				p
-					= mail_to 'plewin@coe.drexel.edu', "plewin@coe.drexel.edu"
-				p
-					| Dr. Lewin obtained his M.S. degree in Electrical Engineering in 1969 and the Ph.D. in Physical Acoustics in 1979 in Copenhagen, Denmark. Before receiving his Ph.D. degree he was employed by Bruel and Kjaer, Denmark, where he was involved in the development of underwater piezoelectric transducers and associated electronics. From 1978 to 1983 he was associated with the Danish Institute of Biomedical Engineering (now Force Institutes) and The University of Denmark, Copenhagen-Lyngby, where his research activities primarily focused on propagation of ultrasound waves in inhomogeneous media and development of PVDF transducers. In 1983 he joined the faculty of Drexel University. Dr. Lewin was awarded several patents in the field of ultrasound and has authored or co-authored over 220 scientific publications, most of them on topics in ultrasound and is co-editor (with Prof. M. C. Ziskin) of a book Ultrasonic Exposimetry (CRC Press, 1993). His current interests are primarily in the field of biomedical ultrasonics including the design and testing of piezoelectric transducers and sensors, power ultrasonics, ultrasonic exposimetry, tissue characterization using nonlinear acoustics, biological effects of ultrasound, applications of shock waves in medicine, image reconstruction and processing, and the treatment of chronic ulcers with thin-profile ultrasound transducers.
-		dd
-			a href="#panel2" Dr.  Michael S. Weingarten
-			#panel2.content
+		h3 Dr. Peter A. Lewin
+		p
+			= mail_to 'plewin@coe.drexel.edu', "plewin@coe.drexel.edu"
+		p
+			| R.B. Beard Distinguished University Professor of Electrical and Biomedical Engineering & Director,  Biomedical Ultrasound Research and Education Center.
+		p
+			| Dr. Lewin obtained his M.S. degree in Electrical Engineering in 1969 and the Ph.D. in Physical Acoustics in 1979 in Copenhagen, Denmark. Before receiving his Ph.D. degree he was employed by Bruel and Kjaer, Denmark, where he was involved in the development of underwater piezoelectric transducers and associated electronics. From 1978 to 1983 he was associated with the Danish Institute of Biomedical Engineering (now Force Institutes) and The University of Denmark, Copenhagen-Lyngby, where his research activities primarily focused on propagation of ultrasound waves in inhomogeneous media and development of PVDF transducers. In 1983 he joined the faculty of Drexel University. Dr. Lewin was awarded several patents in the field of ultrasound and has authored or co-authored over 220 scientific publications, most of them on topics in ultrasound and is co-editor (with Prof. M. C. Ziskin) of a book Ultrasonic Exposimetry (CRC Press, 1993). His current interests are primarily in the field of biomedical ultrasonics including the design and testing of piezoelectric transducers and sensors, power ultrasonics, ultrasonic exposimetry, tissue characterization using nonlinear acoustics, biological effects of ultrasound, applications of shock waves in medicine, image reconstruction and processing, and the treatment of chronic ulcers with thin-profile ultrasound transducers.
+
+		.row
+			.medium-6.columns
+				h3
+					| Dr.  Michael S. Weingarten
 				p
 					| Professor of Surgery <br>
 					| Chief, Vascular Surgery <br>
@@ -28,42 +26,40 @@ title: People
 					| Director, Wound Healing Program
 				p
 					= link_to "Website", "https://www.drexelmed.edu/Home/AboutOurFaculty/MichaelWeingarten.aspx"
-				p
+					br
 					= mail_to "Michael.weingarten@drexelmed.edu", 
 							  "Michael.weingarten@drexelmed.edu"
-		dd
-			a href="#panel3" Dr. Leonid Zubkov
-			#panel3.content
+			.medium-6.columns
+				h3 Dr. Leonid Zubkov
 				p Research Professor
 				p = mail_to "leonid.a.zubkov@drexel", "leonid.a.zubkov@drexel"
-		dd
-			a href="#panel4" Dr. Michael Neidrauer
-			#panel4.content
+
+		.row
+			.medium-6.columns
+				h3 Dr. Michael Neidrauer
 				p Research Assistant Professor
 				p = mail_to "Mtn33@drexel.edu", "Mtn33@drexel.edu"
-		dd
-			a href="#panel5" Dr. Kara Spiller
-			#panel5.content
+			.medium-6.columns
+				h3 Dr. Kara Spiller
 				p Assistant Professor
 				p = mail_to "Kls35@drexel.edu", "Kls35@drexel.edu"
-		dd
-			a href="#panel6" Dr. Stephen Wrenn
-			#panel6.content
+
+		.row
+			.medium-6.columns
+				h3 Dr. Stephen Wrenn
 				p Assistant Professor
 				p = mail_to "Steven.parker.wrenn@drexel.edu", "Steven.parker.wrenn@drexel.edu"
-		dd
-			a href="#panel7" Dr. Philip Bloomfield
-			#panel7.content
+			.medium-6.columns
+				h3 Dr. Philip Bloomfield
 				p Research Professor
 				p = mail_to "bloomfpe@drexel.edu", "bloomfpe@drexel.edu"
-		dd
-			a href="#panel8" Doctoral Candidates
-			#panel8.content
-				ul
-					li Joshua A. Samuels
-					li Christopher R. Bawiec
-					li Youhan Sunny
-					li David Diaz
-					li An Nguyen
+
+		h3 Doctoral Candidates
+		ul.no-bullet
+			li Joshua A. Samuels
+			li Christopher R. Bawiec
+			li Youhan Sunny
+			li David Diaz
+			li An Nguyen
 
 

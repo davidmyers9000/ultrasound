@@ -1,4 +1,4 @@
-$logo-size: 100px;
+$logo-size: 80px;
 
 a.page_header {
 	@extend h2;
@@ -6,8 +6,15 @@ a.page_header {
 	background-image: url('../images/drexel_logo.png');
 	background-repeat: no-repeat;
 	background-size: $logo-size;
+	line-height: 1.2;
 }
 
-.biomed_logo {
-	margin: 20px 0px;
+.biomed_button {
+	@extend .button;
+	@extend .small;
+
+	@media #{$small-only} {
+		padding: $button-tny;
+		font-size: $button-font-tny;
+	}
 }

@@ -17,10 +17,12 @@ html class="no-js" lang="en"
 
     .row
       .medium-3.columns
-        = partial "navigation" 
+        .nav
+          = partial "navigation" 
       
       .medium-9.columns
-        = yield 
+        .content
+          = yield 
       
     
     .row

@@ -7,7 +7,7 @@ compass_config do |config|
   config.add_import_path "bower_components/foundation/scss"
   
   # Set this to the root of your project when deployed:
-  config.http_path = "/"
+  config.http_path = "/new04/ultrasound/"
   config.css_dir = "stylesheets"
   config.sass_dir = "stylesheets"
   config.images_dir = "images"
@@ -86,11 +86,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :relative_links, true
-
 activate :livereload
-
-activate :relative_assets
 
 require 'slim'
 
@@ -105,9 +101,11 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
 
+  set :relative_links, true
+
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_prefix, "/new04/ultrasound/"
 end
