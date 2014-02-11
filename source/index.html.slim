@@ -2,13 +2,8 @@
 title: Home
 ---
 
-/
-	.row
-	  .large-12.columns
-	  	h1 = current_page.data.title
-
 .row
-	.large-12-columns
+  .large-12.columns
 		ul(data-orbit)
 			li
 				= image_tag 'slideshow12.jpg'
@@ -18,8 +13,9 @@ title: Home
 				= image_tag 'slideshow11.jpg'
 			li
 				= image_tag 'slideshow3.jpg'
-.row
-  .large-12.columns
+
+		h2 
+			| Introduction
 		p 
 			| The Drexel Ultrasound and Optics Wound Healing Team was formed as a collaboration 
 			| between the ultrasound work of Dr. Peter Lewin and the optics team of Drs. Michael 
