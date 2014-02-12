@@ -1,5 +1,13 @@
 $logo-size: 80px;
 
+.header {
+	background-color: $panel-bg-color;
+
+	hr {
+		border: none;
+	}
+}
+
 a.page_header {
 	@extend h2;
 	padding-left: $logo-size + 20px;
@@ -7,6 +15,12 @@ a.page_header {
 	background-repeat: no-repeat;
 	background-size: $logo-size;
 	line-height: 1.2;
+
+	@media #{$small-only} {
+		background-size: $logo-size - 20px;
+		padding-left: $logo-size;
+
+	}
 }
 
 .biomed_button {

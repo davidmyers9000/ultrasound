@@ -1,16 +1,28 @@
 body {
-  background: #eee;
+  background-color: $body-bg-color;
+  background-image: url("../images/ripple-tank-bg.jpg");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .content {
   @extend .panel;
   padding: rem-calc(20) rem-calc(40);
+  background: $panel-bg-color;
+  border: none;
   
   h1{
     margin: 0em 0em .5em 0em;
+    color: $body-font-color;
   }
   h2, h3, h4, h5, h6 {
     margin: .5em 0em .5em 0em;
+    color: $body-font-color;
+  }
+
+  p{
+    color: $body-font-color;
   }
   // Shrink padding for mobile devices
   @media #{$small-only} {
@@ -29,4 +41,8 @@ body {
   padding: rem-calc(10);
   margin: rem-calc(10);
 
+}
+
+hr {
+  border-color: rgba(100,100,100,.4);
 }
