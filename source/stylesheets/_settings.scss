@@ -41,7 +41,7 @@ $body-font-family: "Droid Serif", serif;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
-$body-bg-color: #feedd9;
+$body-bg-color: #fff;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -614,10 +614,10 @@ $body-bg-color: #feedd9;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-$panel-bg: darken(#fff, 1%);
-$panel-bg-color: rgba(254, 237, 217,.5);
-$panel-border-style: solid;
-$panel-border-size: 1px;
+// $panel-bg: darken(#fff, 1%);
+$panel-bg-color: rgba(255,255,255,.7);
+// $panel-border-style: solid;
+// $panel-border-size: 1px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: 10%;
