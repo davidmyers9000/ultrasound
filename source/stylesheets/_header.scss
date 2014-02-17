@@ -1,10 +1,8 @@
 $logo-size: 80px;
 
 .header {
-	background-color: lighten($panel-bg-color, 2%);
-
 	hr {
-		border: none;
+		border-top: 5px solid #eee;
 	}
 }
 

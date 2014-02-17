@@ -1,15 +1,20 @@
 body {
   background-color: $body-bg-color;
   background-image: url("../images/ripple-tank-bg.jpg");
-  background-size: 900px;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.content {
-  @extend .panel;
-  padding: rem-calc(20) rem-calc(40);
+.container {
+  background: #000;
   background: lighten($panel-bg-color, 3%);
+  max-width: rem-calc(1000em);
+  margin: 0 auto;
+}
+
+.content {
+  // padding: rem-calc(20) rem-calc(40);
   border: none;
   
   h1{
