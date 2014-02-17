@@ -1,5 +1,5 @@
 .nav {
 	@extend .panel;
-	background-color: $panel-bg-color;
+	background-color: lighten($panel-bg-color, 2%);
 	border: none;
 }

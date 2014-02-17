@@ -1,7 +1,7 @@
 body {
   background-color: $body-bg-color;
   background-image: url("../images/ripple-tank-bg.jpg");
-  background-size: contain;
+  background-size: 900px;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -9,7 +9,7 @@ body {
 .content {
   @extend .panel;
   padding: rem-calc(20) rem-calc(40);
-  background: $panel-bg-color;
+  background: lighten($panel-bg-color, 3%);
   border: none;
   
   h1{
@@ -40,9 +40,14 @@ body {
   @extend .panel;
   padding: rem-calc(10);
   margin: rem-calc(10);
+  background: lighten($panel-bg-color, 5%);
+  border: none;
 
 }
 
 hr {
   border-color: rgba(100,100,100,.4);
+  border-style: dotted;
 }
+
+@import "publications";
