@@ -2,7 +2,8 @@ $logo-size: 80px;
 
 .header {
 	hr {
-		border-top: 5px solid #eee;
+		border-top: 2px solid $primary-color;
+		border-bottom: 5px solid lighten($primary-color, 10%);
 	}
 }
 

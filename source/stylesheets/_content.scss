@@ -43,10 +43,10 @@ body {
 
 .image_panel {
   @extend .panel;
-  padding: rem-calc(10);
+  padding: rem-calc(5);
   margin: rem-calc(10);
-  background: lighten($panel-bg-color, 5%);
-  border: none;
+  background: none;
+  border: 1px solid #CCC;
 
 }
 
