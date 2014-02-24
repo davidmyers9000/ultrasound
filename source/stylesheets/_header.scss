@@ -1,15 +1,15 @@
 $logo-size: 80px;
 
 .header {
-	background-color: $panel-bg-color;
-
 	hr {
-		border: none;
+		border-top: 2px solid $primary-color;
+		border-bottom: 5px solid lighten($primary-color, 10%);
 	}
 }
 
 a.page_header {
 	@extend h2;
+	margin: rem-calc(20);
 	padding-left: $logo-size + 20px;
 	background-image: url('../images/drexel_logo.png');
 	background-repeat: no-repeat;

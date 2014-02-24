@@ -1,15 +1,20 @@
 body {
   background-color: $body-bg-color;
   background-image: url("../images/ripple-tank-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+.container {
+  background: #000;
+  background: lighten($panel-bg-color, 3%);
+  max-width: rem-calc(1000em);
+  margin: 0 auto;
+}
+
 .content {
-  @extend .panel;
-  padding: rem-calc(20) rem-calc(40);
-  background: $panel-bg-color;
+  // padding: rem-calc(20) rem-calc(40);
   border: none;
   
   h1{
@@ -38,11 +43,18 @@ body {
 
 .image_panel {
   @extend .panel;
-  padding: rem-calc(10);
+  padding: rem-calc(5);
   margin: rem-calc(10);
+  background: none;
+  border: 1px solid #CCC;
 
 }
 
 hr {
   border-color: rgba(100,100,100,.4);
+  border-style: dotted;
 }
+
+@import "people";
+
+@import "publications";

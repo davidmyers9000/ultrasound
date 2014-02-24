@@ -11,25 +11,26 @@ html class="no-js" lang="en"
     = javascript_include_tag "modernizr"
   
   body class="= page_classes"
-    .row
-      .large-12.columns
-        .header
-          = partial "header"
+    .container
+      .row
+        .large-12.columns
+          .header
+            = partial "header"
 
-    .row
-      .medium-3.columns
-        .nav
-          = partial "navigation" 
+      .row
+        .medium-3.columns
+          .nav
+            = partial "navigation" 
+        
+        .medium-9.columns
+          .content
+            = yield 
+        
       
-      .medium-9.columns
-        .content
-          = yield 
-      
-    
-    .row
-      hr
-      .medium-9.medium-offset-3.columns
-        = partial "footer" 
+      .row
+        hr
+        .medium-9.medium-offset-3.columns
+          = partial "footer" 
       
     
     = javascript_include_tag  "all" 
