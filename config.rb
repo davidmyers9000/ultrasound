@@ -61,6 +61,14 @@ end
 # Helpers
 ###
 
+helpers do
+  def is_current_page(link)
+    if link == data.page.title.downcase
+      "class='current-page'"
+    end
+  end
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
