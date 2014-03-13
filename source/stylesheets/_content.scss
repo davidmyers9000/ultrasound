@@ -16,14 +16,17 @@ body {
 .content {
   // padding: rem-calc(20) rem-calc(40);
   border: none;
+  padding: 0 rem-calc(20);
   
   h1{
     margin: 0em 0em .5em 0em;
     color: $body-font-color;
+    text-transform: uppercase;
   }
   h2, h3, h4, h5, h6 {
     margin: .5em 0em .5em 0em;
     color: $body-font-color;
+    text-transform: uppercase;
   }
 
   p{

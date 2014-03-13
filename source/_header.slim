@@ -1,4 +1,6 @@
 .clearfix
-	= link_to "Drexel Biomed", "../", :class => "right biomed_button"
+	.right.biomed_button
+		= image_tag "https://www.fin.gc.ca/new_template/2013/img/IconPNG/HouseWhite.png", alt: " ", class: "float left", width: "10"
+		= link_to "Biomed Home", "http://biomed.drexel.edu"
 	= link_to 'Drexel Ultrasound & <br> Optics Wound Healing Team', 
 								'./', :class => 'left page_header'

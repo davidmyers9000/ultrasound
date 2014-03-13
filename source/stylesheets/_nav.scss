@@ -1,12 +1,7 @@
 .nav {
 	@extend .panel;
-	background-color: #ddd;
+	background: none;
 	border: none;
-	border-radius: 10px;
-	@media #{$medium-up} {
-		border-radius: 10px 0 0 10px;
-		padding-right: 0;
-	}
 }
 
 ul.side-nav {
@@ -15,22 +10,27 @@ ul.side-nav {
 			color: #222;
 			padding: 2px;
 			padding-left: 5px;
+			border-right: 5px solid #DDD;
+
 			&.current-page {
-				background-color: #f2f2f2;
+				border-right: 5px solid $primary-color;
+				background: lighten($drexel_blue, 70%);
 			}
 		}
 
-		@include transition-property(background, color);
+		@include transition-property(background, border, color);
 		@include transition-duration(0.5s);
 
 		// li Hover state
 		&:hover {
 			background: $primary-color;
 			a {
+				border-right: 5px solid $primary-color;
 				color: #fff;
 			}
 			a.current-page {
-				color: inherit;
+				border-right: none;
+				color: #fff;
 			}
 		}
 	}

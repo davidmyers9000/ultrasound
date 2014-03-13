@@ -1,4 +1,5 @@
-$logo-size: 80px;
+$logo-size: 60px;
+$home-height: 15px;
 
 .header {
 	hr {
@@ -8,7 +9,7 @@ $logo-size: 80px;
 }
 
 a.page_header {
-	@extend h2;
+	@extend h3;
 	margin: rem-calc(20);
 	padding-left: $logo-size + 20px;
 	background-image: url('../images/drexel_logo.png');
@@ -26,9 +27,18 @@ a.page_header {
 .biomed_button {
 	@extend .button;
 	@extend .small;
+	padding: rem-calc(10);
 
-	@media #{$small-only} {
-		padding: $button-tny;
-		font-size: $button-font-tny;
+	a {
+		color: #fff
+	}
+
+	img {
+		margin: 2px 5px;
+	}
+
+	background: $drexel_blue;
+	&:hover{
+		background: lighten($drexel_blue, 15%)
 	}
 }
