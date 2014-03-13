@@ -2,11 +2,11 @@ ul.side-nav
 	- nav = %w(home people research publications contact inthenews)
 	- nav.each do |link|
 		- if link == 'home'
-			= "<li><a #{is_current_page(link)} href='./'>#{link.capitalize}</a></li>"
+			= "<li><a #{is_this_page(link)} href='./'>#{link.capitalize}</a></li>"
 		- elsif link == 'inthenews'
-			= "<li><a #{is_current_page(link)} href='./#{link}.html'>In the News</a></li>"
+			= "<li><a #{is_this_page('in the news')} href='./#{link}.html'>In the News</a></li>"
 		- else
-			= "<li><a #{is_current_page(link)} href='./#{link}.html'>#{link.capitalize}</a></li>"
+			= "<li><a #{is_this_page(link)} href='./#{link}.html'>#{link.capitalize}</a></li>"
 / ul.side-nav
 / 	li
 / 		a href="./" Home

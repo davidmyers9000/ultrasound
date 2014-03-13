@@ -62,7 +62,7 @@ end
 ###
 
 helpers do
-  def is_current_page(link)
+  def is_this_page(link)
     if link == data.page.title.downcase
       "class='current-page'"
     end

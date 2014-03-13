@@ -8,7 +8,7 @@ body {
 
 .container {
   background: #000;
-  background: lighten($panel-bg-color, 3%);
+  background: rgba(255,255,255,.9);
   max-width: rem-calc(1000em);
   margin: 0 auto;
 }

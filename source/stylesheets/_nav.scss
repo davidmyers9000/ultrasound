@@ -2,7 +2,11 @@
 	@extend .panel;
 	background-color: #ddd;
 	border: none;
-	border-radius: 10px 0 0 10px;
+	border-radius: 10px;
+	@media #{$medium-up} {
+		border-radius: 10px 0 0 10px;
+		padding-right: 0;
+	}
 }
 
 ul.side-nav {
@@ -11,19 +15,22 @@ ul.side-nav {
 			color: #222;
 			padding: 2px;
 			padding-left: 5px;
-
 			&.current-page {
-				background-color: #fff;
+				background-color: #f2f2f2;
 			}
 		}
 
 		@include transition-property(background, color);
 		@include transition-duration(0.5s);
 
+		// li Hover state
 		&:hover {
 			background: $primary-color;
 			a {
 				color: #fff;
+			}
+			a.current-page {
+				color: inherit;
 			}
 		}
 	}
