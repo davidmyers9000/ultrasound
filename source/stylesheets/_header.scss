@@ -2,10 +2,8 @@ $logo-size: 60px;
 $home-height: 15px;
 
 .header {
-	hr {
-		border-top: 2px solid $primary-color;
-		border-bottom: 5px solid lighten($primary-color, 10%);
-	}
+	background-color: #3A9BFF;
+	box-shadow: inset 0px -3px 0px $primary-color;
 }
 
 a.page_header {
@@ -16,6 +14,7 @@ a.page_header {
 	background-repeat: no-repeat;
 	background-size: $logo-size;
 	line-height: 1.2;
+	color: #fcfcfc;
 
 	@media #{$small-only} {
 		background-size: $logo-size - 20px;

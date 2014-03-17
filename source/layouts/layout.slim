@@ -10,11 +10,11 @@ html class="no-js" lang="en"
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
   
-  body class="= page_classes"
+  body class="#{page_classes}"
     .container
-      .row
-        .large-12.columns
-          .header
+      .header    
+        .row
+          .large-12.columns
             = partial "header"
 
       .row
