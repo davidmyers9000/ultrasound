@@ -1,0 +1,7 @@
+.ie {
+	.medium-9.columns {
+		@media #{$medium-up} {
+			width: 65%;
+		}
+	}
+}
