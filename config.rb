@@ -5,9 +5,9 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path "bower_components/foundation/scss"
-  
+
   # Set this to the root of your project when deployed:
-  config.http_path = "/new04/ultrasound/"
+  config.http_path = "/labs/ultrasound/"
   config.css_dir = "stylesheets"
   config.sass_dir = "stylesheets"
   config.images_dir = "images"
@@ -113,6 +113,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+
+  ignore 'bower_components/**'
 
   # Or use a different image path
   # set :http_prefix, "/new04/ultrasound/"
