@@ -8,10 +8,20 @@ html class="no-js" lang="en"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    / Use title if it's in the page YAML frontmatter 
+    / Use title if it's in the page YAML frontmatter
     title
-      = data.page.title + " | Drexel Ultrasound & Wound Healing Team" || "Drexel Ultrasound & Wound Healing Team" 
-    
+      = data.page.title + " | Drexel Ultrasound & Wound Healing Team" || "Drexel Ultrasound & Wound Healing Team"
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-48789419-1']);
+      _gaq.push(['_setDomainName', 'drexel.edu']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     = stylesheet_link_tag "app"
     = javascript_include_tag "modernizr"
 
@@ -21,10 +31,10 @@ html class="no-js" lang="en"
       = javascript_include_tag "//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"
       = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"
       / = javascript_include_tag "rem.min"
-  
+
   body class="#{page_classes}"
     .container
-      .header    
+      .header
         .row
           .large-12.columns
             = partial "header"
@@ -32,20 +42,20 @@ html class="no-js" lang="en"
       .row
         .medium-3.columns
           .nav
-            = partial "navigation" 
-        
+            = partial "navigation"
+
         .medium-9.columns
           .content
-            = yield 
-        
-      
+            = yield
+
+
       .row.footer
         hr
         .medium-9.medium-offset-3.columns.ie
-          = partial "footer" 
-      
-    
-    = javascript_include_tag  "all" 
+          = partial "footer"
+
+
+    = javascript_include_tag  "all"
     /[if lt IE 9]
       = javascript_include_tag "rem.min"
 | </html>
