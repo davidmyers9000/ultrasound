@@ -22,4 +22,6 @@
 
 # Ignore Photoshop files
 /source/images/*.psd
-.psd
+*.psd
+*.sh
+
